@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome| Cover letter builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./preloader.css">
+</head>
+<body>
+    
+<div id="preloader" style="display: none;" >
+
+    <div class="lds-ripple">
+        <div></div>
+        <div></div>
+        <p>Please wait...</p>
+    </div>
+
+</div>
+
+<div id="welcome" style="display:flex;" >
+    <div class="center-content">
+        <h1>Creat a cover letter your employers won't resist!</h1>
+        <button onclick="startApp()" >Start Now &rbarr;</button>
+    </div>
+</div>
+
+<div id="app" style="display: none;" >
+
+    <h1>please fill in the corresponding details </h1>
+    <form onsubmit="event.preventDefault();creatLetter()" >
+        <div id="personal-inf0">
+           <input type="text=" id="fullname" placeholder="Enter your full name.." > 
+           <input type="text" id="address" Enter your adress  placeholder="Enter your address..">
+           <input type="text" id="phone" placeholder="Phone number" >
+           <input type="=t=ext" id="email" placeholder="Email">
+        </div>
+       
+       <div id="employers-info">
+           <input type="text" id="employername" placeholder="Employer's name..." >
+           <input type="text" id="company-adress" placeholder="Company's address...">
+       </div>
+
+       <div id="other-info">
+           <input type="text" id="degree" placeholder="Your degree. E.g B.sc, B.eng, Icann, HND..." >
+           <input type="text"  id="speciality" placeholder="Area of speciality" >
+           <input type="text" id="role" placeholder="What role are you appling for?" >
+           <input type="text" id="prev-work" placeholder="Previous works..." >
+           <input type="text" id="positive-traits" placeholder="Your positive traits...">
+       </div>
+
+       <button>Create my cover letter &rbarr;</button>
+
+    </form>
+</div>
+
+
+<div id="result" style="display: none;" >
+    <div id="cover-letter">
+        <header>
+            <h2 id="your-name">Your name</h2>
+            <p id="your-address">55, your daddy backyard, minding your business</p>
+            <p id="your-phone">0987654321</p>
+            <p id="your-email">example@example.com</p>
+        </header>
+
+        <div id="letter-body">
+            <p id="letter-date">some deta here</p>
+            <div id="company-block">
+                <h3 id="employer">Employer name</h3>
+                <p id="companyAddressBox">Blah Blah Blah company location</p>
+            </div>
+            <p id="greeting">Dear somebody</p>
+            <p id="para1">Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Laudantium perferendis quibusdam
+                  quidem voluptate saepe, alias ratione ullam iure, 
+                  aspernatur quasi veniam. Architecto nostrum numquam 
+                  ipsam aliquid 
+                eius! Facilis, neque assumenda.</p>
+            <p id="para2">Lorem ipsum dolor sit, amet
+                 consectetur adipisicing elit. Accusantium natus
+                  dolores illum sint dolor, error neque, similique
+                   perspiciatis maxime sit a! Fuga excepturi aperiam, 
+                   molestias aliquid aliquam quam nisi omnis.</p>
+            <p id="para3">Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Dolore omnis aliquam sequi aliquid, fugit totam quos,
+                  excepturi quasi repudianda    document.querySelector('#preloader').style.display = 'flex';
+                  e ipsam vitae itaque veniam 
+                  laborum sit provident facere! Quisquam, placeat deserunt.</p>
+            <p id="conclusion">Thanks for your time and your perusal</p>
+            <p id="compliment">Regards</p>
+            
+        </div>
+    </div>
+</div>
+
+<div id="thanks">
+
+</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
